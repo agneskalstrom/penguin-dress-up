@@ -164,7 +164,6 @@
         topsIndex = undefined;
         shoesIndex = undefined;
         document.getElementById("saying").innerHTML = " ";
-        console.log(hatsIndex, topsIndex, shoesIndex);
     }
 
     function randomizeClothes() {
