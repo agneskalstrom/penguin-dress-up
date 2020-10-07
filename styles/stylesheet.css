@@ -1,0 +1,295 @@
+/* CSS Reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* End CSS Reset */
+
+body {
+    background-color: #E37599;
+    background-image: linear-gradient(#19C4A8, #E37599);
+    background-repeat: no-repeat;
+    font-family: Helvetica, sans-serif;
+    color: #222;
+}
+
+header {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-top: 3em;
+}
+
+h1 {
+    font-family: 'Press Start 2P', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: .4em;
+    text-shadow: 0px 4px #fff;
+}
+
+header p {
+    width: 50%;
+    margin: auto;
+}
+
+.wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#top {
+    display: flex;
+    align-items: center;
+}
+
+#speechbubble {
+    width: 134px;
+    font-family: 'Press Start 2P', sans-serif;
+    line-height: 1.2em;
+    font-size: .9em;
+    transform: rotate(-5deg);
+    text-align: center;
+    padding-left: 3em;
+    float: left;
+}
+
+.penguin {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+}
+
+.arrowscontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#hatscontainer {
+    width: 366px;
+    height: 142px;
+    background-image: url(../images/penguinhead.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#topscontainer {
+    width: 500px;
+    height: 316px;
+    background-image: url(../images/penguinbody.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#shoescontainer {
+    width: 500px;
+    height: 93px;
+    background-image: url(../images/penguinfeet2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.arrow {
+    background-color: transparent;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 3em;
+    border: none;
+    cursor: pointer;
+    text-shadow: 0px 4px 0px #fff;
+    position: relative;
+    color: #222;
+}
+
+.arrow:nth-child(2) {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.arrow:hover {
+    color: #fff;
+    text-shadow: 0px 4px 0px #222;
+}
+
+.bottom {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#reset,
+#randomize,
+#opinion {
+    color: #222;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: 'Press Start 2P';
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0px 5px 0px #222;
+    cursor: pointer;
+    margin-left: 1em;
+    margin-right: 1em;
+    position: relative;
+    background-color: #fff;
+}
+
+#reset:hover,
+#randomize:hover,
+#opinion:hover {
+    box-shadow: 0px 3px 0px #222;
+    animation: buttonpress .1s 1 forwards;
+}
+
+@keyframes buttonpress {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 3px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .wrapper {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    header p {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    #speechbubble {
+        width: 108px;
+        padding-left: 2.5em;
+    }
+
+    #hatscontainer {
+        width: 292px;
+        height: 113px;
+    }
+
+    #topscontainer {
+        width: 400px;
+        height: 253px;
+    }
+
+    #shoescontainer {
+        width: 400px;
+        height: 74px;
+    }
+
+    .arrow {
+        font-size: 2.4em;
+    }
+
+    .arrow:nth-child(2) {
+        margin-top: 2.8em;
+        margin-bottom: 2.8em;
+    }
+
+    #speechbubble {
+        left: 18%;
+        font-size: .8em;
+    }
+
+    .bottom {
+        margin-top: 2em;
+    }
+
+    header {
+        margin-top: 4em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    h1 {
+        font-size: 1.4em;
+        text-shadow: 0px 3px #fff;
+    }
+    
+    #speechbubble {
+        width: 67px;
+        height: 71px;
+        padding-left: 1;
+    }
+    
+    #hatscontainer {
+        width: 183px;
+        height: 71px;
+    }
+
+    #topscontainer {
+        width: 250px;
+        height: 158px;
+    }
+
+    #shoescontainer {
+        width: 250px;
+        height: 46px;
+    }
+    
+    .bottom {
+        width: 50%;
+    }
+    
+    #opinion {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .arrow {
+        font-size: 2em;
+    }
+
+    .arrow:nth-child(2) {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+

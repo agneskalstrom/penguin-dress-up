@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <title>Penguin Dress Up</title>
+    <link href="styles/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=block" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <h1>Penguin Dress Up</h1>
+        <p>Antarctica is a cool place but this penguin doesn’t look the part. Help it get dressed in some snazzy clothes by clicking the arrows below. Noot noot!</p>
+    </header>
+    <main>
+    <div class="wrapper">
+        <div class="arrowscontainer">
+            <button id="hatsleft" class="arrow"> &lt; </button>
+            <button id="topsleft" class="arrow"> &lt; </button>
+            <button id="shoesleft" class="arrow"> &lt; </button>
+        </div>
+        <div class="penguin">
+            <div id="top">
+                <div id="speechbubble">
+                    <p id="saying"></p>
+                </div>
+                <img alt="A penguin's head from the neck up" src="images/penguinhead.png" id="hatscontainer">
+            </div>
+            <img alt="A penguin's body from the neck to the feet" src="images/penguinbody.png" id="topscontainer">
+            <img alt="A penguin's feet and tail" src="images/penguinfeet.png" id="shoescontainer">
+        </div>
+        <div class="arrowscontainer">
+            <button id="hatsright" class="arrow"> > </button>
+            <button id="topsright" class="arrow"> > </button>
+            <button id="shoesright" class="arrow"> > </button>
+        </div>
+    </div>
+    <div class="bottom">
+        <button id="randomize">Random</button>
+        <button id="opinion">Feedback</button>
+        <button id="reset">Reset</button>
+    </div>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
